@@ -1,0 +1,164 @@
+<<<<<<< HEAD
+Script started on 2023-11-20 21:30:44+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="170" LINES="54"]
+[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mgit status[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status
+[A
+[?2004lOn branch backend
+Your branch is up to date with 'origin/backend'.
+=======
+Script started on 2023-11-21 03:24:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="186" LINES="69"]
+[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ git statuds[K[Ks
+[?2004lOn branch frontend
+Your branch is up to date with 'origin/frontend'.
+>>>>>>> frontend
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlog[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+<<<<<<< HEAD
+[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mgit log -1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log -1
+[A
+[?2004l[?1h=[33mcommit 16e2849fec9cb5d57153cab93d5815b2e563631a[m[33m ([m[1;36mHEAD -> [m[1;32mbackend[m[33m, [m[1;31morigin/backend[m[33m)[m[m
+Author: RISHIKA <gudise@wisc.edu>[m
+Date:   Mon Nov 20 21:30:17 2023 +0000[m
+[m
+    added correct Makefile[m
+[K[?1l>[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mmake clean[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean
+[A
+[?2004lrm -f *.class
+[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mls[27mls
+[?2004lBackendDeveloperTests.java  BackendInterface.java  DijkstraGraph.java      GraphADT.java  MapADT.java          flights.dot  shortestPathImplementation.java
+BackendImplementation.java  BaseGraph.java         FrontendInterface.java  Makefile       PlaceholderMap.java  log          shortestPathInterface.java
+[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mmake runBDTests[27mmake runBDTests
+[?2004ljavac BackendInterface.java
+javac BackendImplementation.java
+javac MapADT.java
+javac -cp .:../junit5.jar DijkstraGraph.java
+javac -cp .:../junit5.jar BackendDeveloperTests.java
+java -cp .:../junit5.jar org.junit.platform.console.ConsoleLauncher --class-path . --select-class BackendDeveloperTests
+java.io.FileNotFoundException: invalid.csv (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at BackendImplementation.readDataFromFile(BackendImplementation.java:25)
+	at BackendDeveloperTests.testInvalidFile(BackendDeveloperTests.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.executeTests(ConsoleTestExecutor.java:66)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.lambda$execute$0(ConsoleTestExecutor.java:58)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.replaceThreadContextClassLoaderAndInvoke(CustomContextClassLoaderExecutor.java:41)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.invoke(CustomContextClassLoaderExecutor.java:31)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.execute(ConsoleTestExecutor.java:58)
+	at org.junit.platform.console.ConsoleLauncher.executeTests(ConsoleLauncher.java:120)
+	at org.junit.platform.console.ConsoleLauncher.execute(ConsoleLauncher.java:82)
+	at org.junit.platform.console.ConsoleLauncher.execute(ConsoleLauncher.java:55)
+	at org.junit.platform.console.ConsoleLauncher.execute(ConsoleLauncher.java:48)
+	at org.junit.platform.console.ConsoleLauncher.main(ConsoleLauncher.java:42)
+=======
+[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ git log-1[K[K -1
+[?2004l[?1h=[33mcommit 6d218f8c172317184234aed91bcf491a3e494841[m[33m ([m[1;36mHEAD -> [m[1;32mfrontend[m[33m, [m[1;31morigin/frontend[m[33m)[m[m
+Author: NoahEpelbaum <epelbaum@wisc.edu>[m
+Date:   Tue Nov 21 03:24:37 2023 +0000[m
+[m
+    completed make file and cs project[m
+[K[?1l>[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ make clean
+[?2004ljavac -cp ~/junit5.jar:. FrontendDeveloperTests.java
+rm *.class
+[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ ls
+[?2004lBackendInterface.java    BaseGraph.java  FrontendDeveloperTests.java  GraphADT.java  MapADT.java          TextUITester.java  [0m[01;31mjunit5.jar[0m  shortestPathInterface.java
+BackendPlaceholder.java  Frontend.java   FrontendInterface.java       Makefile       PlaceholderMap.java  flights.dot        log
+[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ make runFDTests 
+[?2004ljavac -cp ~/junit5.jar:. FrontendDeveloperTests.java
+java -jar ~/junit5.jar --class-path=. --select-class=FrontendDeveloperTests
+>>>>>>> frontend
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+<<<<<<< HEAD
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m│  └─[0m [36mBackendDeveloperTests[0m [32m✔[0m
+[36m│     ├─[0m [34mtestInvalidStartOrEnd[0m [32m✔[0m
+[36m│     ├─[0m [34mtestInvalidFile[0m [32m✔[0m
+[36m│     ├─[0m [34mtestGetSummary[0m [32m✔[0m
+[36m│     ├─[0m [34mtestFindShortestPath[0m [32m✔[0m
+[36m│     └─[0m [34mtestReadDataFromFile[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 829 ms
+=======
+[36m│  └─[0m [36mFrontendDeveloperTests[0m [32m✔[0m
+[36m│     ├─[0m [34mTest1()[0m [32m✔[0m
+[36m│     ├─[0m [34mTest2()[0m [32m✔[0m
+[36m│     ├─[0m [34mTest3()[0m [32m✔[0m
+[36m│     ├─[0m [34mTest4()[0m [32m✔[0m
+[36m│     └─[0m [34mTest5()[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Test run finished after 187 ms
+>>>>>>> frontend
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         5 tests found           ]
+[         0 tests skipped         ]
+[         5 tests started         ]
+[         0 tests aborted         ]
+[         5 tests successful      ]
+[         0 tests failed          ]
+
+<<<<<<< HEAD
+[?2004h]0;gudise@my-cs400-vm-1: ~/p2[01;32mgudise@my-cs400-vm-1[00m:[01;34m~/p2[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2023-11-20 21:31:26+00:00 [COMMAND_EXIT_CODE="0"]
+=======
+[?2004h]0;epelbaum@my-cs400-vm: ~/p2[01;32mepelbaum@my-cs400-vm[00m:[01;34m~/p2[00m$ exit
+[?2004lexit
+
+Script done on 2023-11-21 03:25:37+00:00 [COMMAND_EXIT_CODE="0"]
+>>>>>>> frontend
